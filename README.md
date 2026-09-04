@@ -3,12 +3,14 @@
 Este repositório contém a documentação e os arquivos referentes à **Atividade Prática 05** da disciplina de Computação em Nuvem, focada no provisionamento de infraestrutura em nuvem (IaaS) e orquestração de containers web.
 
 ---
+<br>
 
 ##  Resumo da Execução
 
 A atividade foi realizada utilizando o **GitHub Codespaces** (ambiente virtualizado Linux Ubuntu em nuvem IaaS) para contornar limitações locais e garantir paridade de ambiente. Durante a execução, foram aplicados os conceitos de virtualização em nível de SO, mapeamento de portas de rede, persistência de dados via volumes e orquestração declarativa.
 
 ---
+<br>
 
 ##  Etapas Realizadas
 
@@ -33,6 +35,7 @@ A atividade foi realizada utilizando o **GitHub Codespaces** (ambiente virtualiz
    * Parada e remoção de containers ativos via `docker stop` e `docker rm` para prevenir consumo desnecessário de cotas em nuvem.
 
 ---
+<br>
 
 ##  Estrutura do Repositório
 
@@ -42,3 +45,37 @@ A atividade foi realizada utilizando o **GitHub Codespaces** (ambiente virtualiz
 │   └── index.html          # Página HTML personalizada exibida no servidor
 ├── docker-compose.yml      # Arquivo de orquestração do serviço Nginx
 └── README.md               # Documentação do repositório
+
+
+```
+##  Como Executar o Projeto
+
+Para reproduzir este ambiente no GitHub Codespaces ou em qualquer terminal Linux com Docker instalado:
+
+
+*  Clonar o repositório
+```
+git clone [https://github.com/SeuUsuario/atividade-5-docker.git](https://github.com/SeuUsuario/atividade-5-docker.git)
+cd atividade-5-docker
+```
+*  Subir o serviço via Docker Compose
+```
+docker compose up -d
+```
+
+*  Verificar os containers em execução
+```
+docker ps
+```
+
+*  Encerrar o serviço
+```
+docker compose down
+```
+<br>
+
+## Autor
+Aluno: Guilherme Zamboni Menegacio
+<br>
+
+## Disciplina: Computação em Nuvem
